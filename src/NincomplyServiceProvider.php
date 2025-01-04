@@ -1,12 +1,11 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Eximius\Nincomply;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class NincomplyServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +15,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->name('laravel-nincomply-sso')
+            ->hasConfigFile();
+            //->hasViews()
+            //->hasMigration('create_laravel_nincomply_sso_table');
+            //->hasCommand(NincomplyCommand::class);
     }
 }
