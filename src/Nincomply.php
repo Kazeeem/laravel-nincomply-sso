@@ -83,6 +83,7 @@ class Nincomply
     public function getUser(string $token): ?object
     {
         $this->accessToken = $token;
+
         return $this->handle('oauth/user');
     }
 
