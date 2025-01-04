@@ -15,6 +15,8 @@ class Nincomply
 
     protected ?string $redirectUri = null;
 
+    protected ?string $accessToken = null;
+
     public function __construct()
     {
         if (! config('nincomply-sso.client_id') || ! config('nincomply-sso.client_secret') || ! config('nincomply-sso.redirect_uri')) {
@@ -80,6 +82,7 @@ class Nincomply
      */
     public function getUser(string $token): ?object
     {
+        $this->accessToken = $token;
         return $this->handle('oauth/user');
     }
 
@@ -97,7 +100,7 @@ class Nincomply
     {
         try {
             if ($method === 'get') {
-                $response = Http::get($this->baseUrl.'/'.$url);
+                $response = Http::withToken($this->accessToken)->get($this->baseUrl.'/'.$url);
             } else {
                 $response = Http::post($this->baseUrl.'/'.$url, $payload);
             }

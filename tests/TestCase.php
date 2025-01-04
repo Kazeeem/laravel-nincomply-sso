@@ -2,6 +2,7 @@
 
 namespace Eximius\Nincomply\Tests;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Eximius\Nincomply\NincomplyServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
