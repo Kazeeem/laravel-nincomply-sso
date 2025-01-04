@@ -17,8 +17,8 @@ class NincomplyServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-nincomply-sso')
             ->hasConfigFile();
-            //->hasViews()
-            //->hasMigration('create_laravel_nincomply_sso_table');
-            //->hasCommand(NincomplyCommand::class);
+        // ->hasViews()
+        // ->hasMigration('create_laravel_nincomply_sso_table');
+        // ->hasCommand(NincomplyCommand::class);
     }
 }
