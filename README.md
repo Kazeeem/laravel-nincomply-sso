@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/eximius/laravel-nincomply-sso/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/eximius/laravel-nincomply-sso/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/eximius/laravel-nincomply-sso.svg?style=flat-square)](https://packagist.org/packages/eximius/laravel-nincomply-sso)
 
-This package is for Laravel developers who are working on any Dragnet project or any other project that need to authenticate users using the NinComply SSO.
+Nincomply SSO package for Laravel Framework
 
 [//]: # (## Support us)
 
