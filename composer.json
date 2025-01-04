@@ -1,6 +1,6 @@
 {
     "name": "eximius/laravel-nincomply-sso",
-    "description": "This is the package that creates the sign in/signup with Nincomply SSO functionality",
+    "description": "Nincomply SSO package for Laravel Framework",
     "keywords": [
         "eximius",
         "laravel",
