@@ -17,6 +17,5 @@ it('can retrieve user object from Nincomply', function () {
 
     $userObject = \Eximius\Nincomply\Facades\Nincomply::getUser($token);
     $this->assertTrue(is_null($userObject)); // it will be null because the token is not valid.
-    //$this->assertTrue(isset($userObject->data->email), 'The user object was not retrieved.');
+    // $this->assertTrue(isset($userObject->data->email), 'The user object was not retrieved.');
 });
-
