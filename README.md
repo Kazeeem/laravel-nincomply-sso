@@ -34,7 +34,7 @@ NINCOMPLY_SSO_REDIRECT_URI=
 (Optional) You may publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-nincomply-sso-config"
+php artisan vendor:publish --tag="nincomply-sso-config"
 ```
 
 This is the contents of the published config file:
